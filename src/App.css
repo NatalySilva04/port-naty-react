@@ -1,0 +1,289 @@
+body {
+  font-family: Arial, sans-serif;    
+  margin: 0;
+  padding: 0;
+  background-color: #1E847F;
+  transition: background-color 0.3s;
+  color: #FFF;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  transition: background 0.2s linear;
+}
+
+.dark-mode {
+  background-color: #333;
+  color: #ff1111;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.label {
+  background-color: #111;
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 10px;
+  width: 35px;
+  transform: scale(1.5);
+  left: 20px;
+  bottom: 5px;
+  top: 15px;
+}
+
+.label .ball {
+  background-color: #fff ;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  height: 15px;
+  width: 15px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(24px);    
+}
+
+.fa-moon {
+  color: #666251;
+}
+
+.fa-sun {
+  color: #f39c12;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px 10px  0 ;
+}
+
+.dark-mode header {
+  background-color: #fff;
+  color: #333;
+}
+
+#logo {
+  display: inline-block;
+  float: right;
+  position:relative;
+  margin-right: 80px;
+  
+}
+
+#logo img {    
+  Height: 254px;
+  Width: 300px; 
+  
+}
+
+h1 {    
+  display: inline-block;
+  font-size: 1.5rem;
+  font-family: 'Courier New', Courier, monospace;
+  color: #fff;
+  text-align:left;
+  padding: 0 600px 0 0;
+}
+
+.dark-mode h1 {
+  color: #111;
+}
+
+nav ul {
+  list-style-type: none;
+  position: relative;
+  text-align: right;
+}
+
+nav li {
+  display: inline;
+  position: relative;
+  margin-right: 20px;            
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;  
+}
+
+.dark-mode nav a {
+  color: #111;
+}
+
+section {
+  padding: 40px;  
+  text-align: center;
+}
+
+h2 {
+  padding: 0;
+  color: #FFF;
+}
+
+.dark-mode h2 {
+  color: #acaaaa;
+}
+
+h4 {
+  font-size: 1.1rem;
+  color: #666;
+  margin-right: 500px;
+}
+
+.dark-mode h4 {
+  color: #111;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #ffffff;   
+    
+}
+
+.dark-mode p {
+  color: #acaaaa;
+}
+
+.boxUm { 
+  margin: auto;
+  padding: 30px ;
+  width: 400px;
+  height: 200px;
+  left: -10px;
+  top: 60px;
+  position:relative;
+  text-align: justify;    
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);  
+  display: inline-block;
+     
+}
+
+.boxDois {
+  margin: auto;    
+  padding: 20px 5px 40px 20px;
+  width: 400px;
+height: 200px;
+  left: 30px;
+  top: -10px;
+  position: relative;
+text-align: justify;    
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  line-height: 1px;
+  
+}
+
+#retrato {
+  display: inline-block;
+  float: left;
+  position:relative;
+  margin-left: 40px;
+  margin-top: 10px;
+  
+}
+
+#retrato img {
+  Height: 300px;
+  Width: 330px; 
+  
+}
+
+.servico {
+  padding: 10px ; 
+  margin: 2px  ;
+}
+
+.box {
+  display: flex;
+}
+
+#servico img {
+  Height: 300px;
+  Width: 330px; 
+}   
+
+h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.fotos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px; 
+}
+
+.imagem {
+  border: 3px solid #ccc; 
+  padding: 10px; 
+  text-align: center; 
+}
+
+.imagem img {
+  max-width: 50%; 
+  height: auto; 
+  
+}
+.imagem:hover{
+  transform: scale(1.07); 
+}
+
+.initialText {    
+font-size: 16px;
+font-style: normal;
+line-height: normal;
+text-align: justify;
+color: #FFF; 
+margin-top: -40px;
+}
+
+.sobre {
+  position: relative;
+  text-align: center;
+  padding: 0;    
+}
+
+.contato {
+
+  background-color: #333;
+  border-radius: 0px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 2px ;
+  margin: 5px ;    
+  transition: background-color 1.5s; 
+  grid-template-columns: repeat(3, 1fr); 
+
+}
+
+.contato:hover {
+      background-color: #949292; 
+      cursor: pointer; 
+      transform: scale(1.05); 
+}   
+
+footer {
+  background-color: #3C3C3C;
+  color: #FFF;
+  text-align: center;
+  font-family: Istok Web;
+  font-size: 30px;
+  font-weight: 700;
+  padding: 1px ;
+}
